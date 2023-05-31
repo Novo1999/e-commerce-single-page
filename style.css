@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+  margin: 3rem 10rem;
+}
+.navbar {
+  display: flex;
+}
+.logo,
+.cart {
+  height: 2rem;
+  cursor: pointer;
+}
+.logo {
+  position: relative;
+  bottom: 0.3rem;
+}
+.avatar:hover {
+  border: 3px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+}
+.avatar {
+  height: 4rem;
+  position: relative;
+  bottom: 1rem;
+  cursor: pointer;
+}
+.avatar-section {
+  display: flex;
+  position: absolute;
+  left: 80%;
+  gap: 2rem;
+}
+.nav {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+ul {
+  position: relative;
+  bottom: 0.2rem;
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.line {
+  margin-top: 2rem;
+}
+.main-img {
+  height: 30rem;
+  margin: 3rem;
+}
+.products img {
+  border-radius: 1rem;
+}
+.product-items {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 3rem;
+  height: 6.4rem;
+}
+.product {
+  display: flex;
+  position: relative;
+  margin-left: 10rem;
+}
+.item-details {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 10rem;
+  bottom: 5rem;
+}
+.cart-text {
+  position: relative;
+  bottom: 0.29em;
+}
+h3 {
+  color: hsl(26, 100%, 55%);
+  position: relative;
+  top: 8rem;
+}
+h1 {
+  font-size: 3rem;
+  position: relative;
+  top: 6rem;
+  margin-right: 40%;
+}
+p {
+  font-size: 1.3rem;
+  position: relative;
+  top: 3rem;
+}
+.price {
+  font-size: 2rem;
+  position: relative;
+  margin-right: 52.5%;
+  margin-top: 1rem;
+}
+
+.discount {
+  position: relative;
+  height: 1.7rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.5rem;
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+  margin-right: 30rem;
+}
+h4 {
+  text-decoration: line-through;
+  opacity: 0.3;
+  position: relative;
+  margin-right: 32.5rem;
+  top: 0.2rem;
+}
+#counter {
+  display: flex;
+  position: relative;
+  margin-right: 36.5rem;
+  top: 1rem;
+}
+.count {
+  padding: 1rem;
+  background-color: hsl(220, 14%, 75%);
+  border-radius: 0.5rem;
+  width: 10rem;
+  height: 3.2rem;
+}
+
+h2 {
+  position: relative;
+  bottom: 2.2rem;
+  text-align: center;
+}
+button[data-value='cart'] {
+  margin-top: 2rem;
+  position: relative;
+  left: 2rem;
+  bottom: 2rem;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(26, 100%, 55%);
+  box-shadow: 1px 10px 250px 4px hsl(26, 100%, 55%);
+}
+button[data-value='cart']:hover {
+  color: hsl(220, 14%, 75%);
+}
+button[data-value='plus'] {
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  font-size: 1.5rem;
+  position: relative;
+  right: 1.9rem;
+  width: 2.5rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(220, 14%, 75%);
+}
+
+button[data-value='minus'] {
+  color: hsl(26, 100%, 55%);
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 0.2px;
+  left: 1.9rem;
+  width: 2.5rem;
+  height: 3rem;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: hsl(220, 14%, 75%);
+}
