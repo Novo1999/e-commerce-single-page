@@ -27,11 +27,11 @@
           <img class="logo" src="/images/logo.svg" alt="" />
           <div class="nav-items">
             <ul>
-              <a href="#">Collections
-              <a href="#">Men
-              <a href="#">Women
-              <a href="#">About
-              <a href="#">Contact</a>
+              <a class="underline" href="#">Collections
+              <a class="men" href="#">Men
+              <a class="women" href="#">Women
+              <a class="about"href="#">About
+              <a class="contact"href="#">Contact</a>
             </ul>
           </div>
         </div>
@@ -41,34 +41,46 @@
         </div>
       </div>
     </section>
+    <div class="underline"></div>
     <hr class="line">
     <div class="product">
       <div class="products">
         <img class="main-img" src="/images/image-product-1.jpg" alt="">
         <div class="product-items">
-          <img src="/images/image-product-1-thumbnail.jpg" alt="">
-          <img src="/images/image-product-2-thumbnail.jpg" alt="">
-          <img src="/images/image-product-3-thumbnail.jpg" alt="">
-          <img src="/images/image-product-2-thumbnail.jpg" alt="">
+          <img class="p-1" src="/images/image-product-1-thumbnail.jpg" alt="">
+          <img class="p-2" src="/images/image-product-2-thumbnail.jpg" alt="">
+          <img class="p-3"src="/images/image-product-3-thumbnail.jpg" alt="">
+          <img class="p-4"src="/images/image-product-2-thumbnail.jpg" alt="">
         </div>
       </div>
     <div class="item-details">
-    <h3>SNEAKER COMPANY</h6>
+    <h3 class="brand">SNEAKER COMPANY</h3>
       <h1>Fall Limited Edition Sneakers</h1>
       <p>These low-profile sneakers are
       your perfect casual wear<br>  companion. Featuring a durable rubber outer sole, <br> 
       they’ll withstand everything the weather can offer. </p> 
       <strong class="price">$125.00</strong> 
       <strong class="discount">50%</strong> 
-      <h4>$250.00</h4>
+      <h4 class="price-tag">$250.00</h4>
       <div id="counter">
         <div class="count">
-          <h2> <button data-value="plus">&minus;</button>0<button data-value="minus">&plus;</button></h2>
+          <h2 class="header-2"> <button class="minus" data-value="plus">&minus;</button> <span class="quantity">0</span><button class="plus" data-value="minus">&plus;</button></h2>
           </div>
-          <button data-value="cart"><span><img class="cart-cart" src="/images/icon-cart.svg" alt="" /></span> <span class="cart-text">Add to cart</span> </button>
+          <button data-value="cart"><span><img class="cart-cart" src="/images/icon-cart.svg" alt="" /></span><span class="cart-text">Add to cart</span> </button>
         </div>
       </div>
     </div>
-    
+    <div class="cart-section">
+      <h3>Cart</h3>
+      <hr class="cart-line">
+      <div class="cart-inner">
+      <img class="cart-img" src="/images/image-product-1-thumbnail.jpg" alt="">
+      <h2 class="cart-title">Fall Limited Edition Sneakers</h2>
+      <h4 class="cart-price">$125.00 x <span class="item-quantity"></span> 3 <span class="arrow">&rarr; </span><strong class="cart-total">$375.00</strong></h4>
+      <button class="delete">🗑️</button>
+      <button class="checkout">Checkout</button>
+    </div>
+    </div>
+  <script src="script.js"></script>
   </body>
 </html>
