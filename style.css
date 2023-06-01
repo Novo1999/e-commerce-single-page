@@ -5,6 +5,7 @@
 }
 body {
   margin: 3rem 10rem;
+  overflow: hidden;
 }
 .navbar {
   display: flex;
@@ -13,6 +14,15 @@ body {
 .cart {
   height: 2rem;
   cursor: pointer;
+}
+.cart-item-count{
+  background-color: hsl(26, 100%, 55%);
+  width: 25px;
+  height: 15px;
+  border-radius: 3rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 3.3rem;
 }
 .logo {
   position: relative;
@@ -211,6 +221,7 @@ button[data-value='minus'] {
   right: 9.6%;
   opacity: 0.5;
 }
+
 .cart-section {
   border: 1px solid black;
   border-radius: 1.5rem;
@@ -222,7 +233,16 @@ button[data-value='minus'] {
   bottom: 45rem;
   left: 70rem;
   background-color: white;
-  
+  display: none;
+}
+.showCart {
+  display: block;
+}
+.empty {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  font-weight: 400;
 }
 .cart-inner {
   display: flex;
@@ -261,14 +281,14 @@ button[data-value='minus'] {
   margin-left: 0.1rem;
   cursor: pointer;
 }
-.checkout:hover{
+.checkout:hover {
   opacity: 0.8;
 }
 .arrow {
   position: relative;
   bottom: 2px;
 }
-.delete{
+.delete {
   position: relative;
   bottom: 3rem;
   left: 7rem;
@@ -278,6 +298,6 @@ button[data-value='minus'] {
   background: transparent;
   cursor: pointer;
 }
-.delete:hover{
+.delete:hover {
   outline: auto;
 }
