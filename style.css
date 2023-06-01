@@ -28,6 +28,12 @@ body {
   position: relative;
   bottom: 0.3rem;
 }
+.cartItem-amount {
+  position: absolute;
+  bottom: -1.4em;
+  left: 0.5em;
+  font-size: 14px;
+}
 .avatar:hover {
   border: 3px solid hsl(26, 100%, 55%);
   border-radius: 50%;
