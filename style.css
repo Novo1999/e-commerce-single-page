@@ -23,6 +23,7 @@ body {
   position: absolute;
   left: 1rem;
   bottom: 3.3rem;
+  display: none;
 }
 .logo {
   position: relative;
@@ -163,7 +164,6 @@ p {
   opacity: 0.5;
   transition: 0.3s ease;
   cursor: pointer;
-
 }
 button[data-value='cart'] {
   margin-top: 2rem;
@@ -345,4 +345,9 @@ button[data-value='minus'] {
   background-color: rgba(0, 0, 0, 0.726);
   z-index: 2;
   display: none;
+}
+
+.p-border,
+.d-border {
+  border: 3px solid hsl(26, 100%, 55%);
 }

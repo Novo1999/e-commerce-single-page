@@ -2,7 +2,7 @@ const addToCart = document.querySelector('button[data-value="cart"]');
 const amount = document.querySelector('.count');
 const quantity = document.querySelector('.quantity');
 const productImgSrc = document.querySelector('.main-img');
-const productImgSrc2 = document.querySelector('.main-img-2');
+let productImgSrc2 = document.querySelector('.main-img-2');
 const thumbnails = document.querySelectorAll('.product-items');
 const navItems = document.querySelectorAll('.nav-items');
 const cart = document.querySelector('.cart');
@@ -18,6 +18,7 @@ const gallery = document.querySelector('.product-gallery');
 const leftBtn = document.querySelector('.left');
 const rightBtn = document.querySelector('.right');
 const products = document.querySelectorAll('.p');
+const products2 = document.querySelectorAll('.d');
 console.log(products.length);
 console.log(thumbnails);
 let count = 0;
@@ -40,9 +41,16 @@ thumbnails.forEach(img =>
   img.addEventListener('click', e => {
     for (let i = 1; i <= 4; i++) {
       if (e.target.classList.contains(`p-${i}`)) {
+        index = i;
         productImgSrc.setAttribute('src', `/images/image-product-${i}.jpg`);
+        if (e.target.classList.contains(`p-${i}`)) {
+          products.forEach(img => img.classList.remove('p-border'));
+          e.target.classList.add('p-border');
+        }
       } else if (e.target.classList.contains(`d-${i}`)) {
         productImgSrc2.setAttribute('src', `/images/image-product-${i}.jpg`);
+        products2.forEach(img => img.classList.remove('d-border'));
+        e.target.classList.add('d-border');
       }
     }
   })
@@ -67,6 +75,7 @@ addToCart.addEventListener('click', function cart() {
       </div>
       </div>`
     );
+    cartItemCount.style.display = 'block';
     emptyCart.style.display = 'none';
     cartItemCount.innerHTML = `<h4 class="cartItem-amount">${count}</h4>`;
   }
@@ -77,10 +86,12 @@ cartSection.addEventListener('click', e => {
   if (e.target.classList.contains('delete')) {
     addedElement.remove();
     emptyCart.style.display = 'flex';
+    cartItemCount.style.display = 'none';
   }
 });
-
 productImgSrc.addEventListener('click', () => {
+  productImgSrc2.src = productImgSrc.src;
+  productImgSrc2.getAttribute('src');
   overlay.style.display = 'block';
   gallery.style.display = 'block';
   console.log(index);
