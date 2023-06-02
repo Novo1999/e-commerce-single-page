@@ -21,7 +21,9 @@
     <title>Frontend Mentor | E-commerce product page</title>
   </head>
   <body>
-    <section>
+
+    <section>      
+      <div class="overlay"></div>
       <div class="navbar">
         <div class="nav">
           <img class="logo" src="/images/logo.svg" alt="" />
@@ -48,15 +50,16 @@
       <div class="products">
         <img class="main-img" src="/images/image-product-1.jpg" alt="">
         <div class="product-items">
-          <img class="p-1" src="/images/image-product-1-thumbnail.jpg" alt="">
-          <img class="p-2" src="/images/image-product-2-thumbnail.jpg" alt="">
-          <img class="p-3"src="/images/image-product-3-thumbnail.jpg" alt="">
-          <img class="p-4"src="/images/image-product-4-thumbnail.jpg" alt="">
+          <img class="p p-1" src="/images/image-product-1-thumbnail.jpg" alt="">
+          <img class="p p-2" src="/images/image-product-2-thumbnail.jpg" alt="">
+          <img class="p p-3"src="/images/image-product-3-thumbnail.jpg" alt="">
+          <img class="p p-4"src="/images/image-product-4-thumbnail.jpg" alt="">
         </div>
       </div>
+
     <div class="item-details">
     <h3 class="brand">SNEAKER COMPANY</h3>
-      <h1>Fall Limited Edition Sneakers</h1>
+      <h1 class="product-name">Fall Limited Edition Sneakers</h1>
       <p>These low-profile sneakers are
       your perfect casual wear<br>  companion. Featuring a durable rubber outer sole, <br> 
       they’ll withstand everything the weather can offer. </p> 
@@ -71,6 +74,7 @@
         </div>
       </div>
     </div>
+    
     <div class="cart-section">
       <h4 class="empty">Your Cart is empty</h4>
       <!-- <h3>Cart</h3>
@@ -83,6 +87,19 @@
       <button class="checkout">Checkout</button>
     </div> -->
     </div>
+    <div class="product-gallery">
+      <div class="products">
+        <img class="main-img-2" src="/images/image-product-1.jpg" alt="">
+          <button class="btn left">&larr;</button>
+          <button class="btn right">&rarr;</button>
+        <div class="product-items">
+          <img class="d-1" src="/images/image-product-1-thumbnail.jpg" alt="">
+          <img class="d-2" src="/images/image-product-2-thumbnail.jpg" alt="">
+          <img class="d-3"src="/images/image-product-3-thumbnail.jpg" alt="">
+          <img class="d-4"src="/images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+
   <script src="script.js"></script>
   </body>
 </html>

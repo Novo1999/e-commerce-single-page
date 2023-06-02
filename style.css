@@ -5,7 +5,7 @@
 }
 body {
   margin: 3rem 10rem;
-  overflow: hidden;
+  overflow: scroll;
 }
 .navbar {
   display: flex;
@@ -15,7 +15,7 @@ body {
   height: 2rem;
   cursor: pointer;
 }
-.cart-item-count{
+.cart-item-count {
   background-color: hsl(26, 100%, 55%);
   width: 25px;
   height: 15px;
@@ -67,7 +67,8 @@ a {
   text-decoration: none;
   color: black;
 }
-.main-img {
+.main-img,
+.main-img-2 {
   height: 30rem;
   margin: 3rem;
 }
@@ -162,6 +163,7 @@ p {
   opacity: 0.5;
   transition: 0.3s ease;
   cursor: pointer;
+
 }
 button[data-value='cart'] {
   margin-top: 2rem;
@@ -306,4 +308,41 @@ button[data-value='minus'] {
 }
 .delete:hover {
   outline: auto;
+}
+.product-gallery {
+  position: relative;
+  bottom: 45rem;
+  left: 30rem;
+  display: none;
+  z-index: 3;
+}
+.product-gallery button {
+  height: 4rem;
+  width: 4rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.left {
+  position: relative;
+  bottom: 17rem;
+  right: 35rem;
+}
+.right {
+  position: relative;
+  bottom: 17rem;
+  right: 9.7rem;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.726);
+  z-index: 2;
+  display: none;
 }
