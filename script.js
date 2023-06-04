@@ -113,3 +113,8 @@ leftBtn.addEventListener('click', () => {
   productImgSrc2.setAttribute('src', `/images/image-product-${index}.jpg`);
   console.log(index);
 });
+
+overlay.addEventListener('click', () => {
+  gallery.style.display = 'none';
+  overlay.style.display = 'none';
+});
