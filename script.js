@@ -60,9 +60,14 @@ cart.addEventListener('click', () => {
   cartSection.classList.toggle('showCart');
 });
 let size = 0;
+let click = 0;
 addToCart.addEventListener('click', () => {
-  size += 320;
-  cartSection.style.height = size + 'px';
+  click++;
+  if (count !== 0) {
+    size += 320; 
+    // FIXME add scrolling overflow
+    cartSection.style.height = size + 'px';
+  }
 });
 
 addToCart.addEventListener('click', function cart() {
@@ -95,6 +100,8 @@ cartSection.addEventListener('click', e => {
     addedElement.remove();
     emptyCart.style.display = 'flex';
     cartItemCount.style.display = 'none';
+    cartSection.style.height -= '320px'; 
+    // FIXME
   }
 });
 productImgSrc.addEventListener('click', () => {
