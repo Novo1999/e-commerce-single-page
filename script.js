@@ -55,7 +55,15 @@ thumbnails.forEach(img =>
     }
   })
 );
-cart.addEventListener('click', () => cartSection.classList.toggle('showCart'));
+
+cart.addEventListener('click', () => {
+  cartSection.classList.toggle('showCart');
+});
+let size = 0;
+addToCart.addEventListener('click', () => {
+  size += 320;
+  cartSection.style.height = size + 'px';
+});
 
 addToCart.addEventListener('click', function cart() {
   if (parseFloat(quantity.textContent) > 0) {

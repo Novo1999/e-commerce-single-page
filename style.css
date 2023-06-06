@@ -235,7 +235,7 @@ button[data-value='minus'] {
   border-radius: 1.5rem;
   width: 25%;
   padding: 2%;
-  height: 20rem;
+  height: 320px;
   box-shadow: 1px 2px 5px 1px black;
   position: relative;
   bottom: 45rem;
