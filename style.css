@@ -241,7 +241,14 @@ button[data-value='minus'] {
   bottom: 45rem;
   left: 70rem;
   background-color: white;
+  overflow-y: auto;
   display: none;
+}
+.scrollbar {
+  height: 300px;
+  width: 50%;
+  overflow: auto;
+  padding: 0 10px;
 }
 .showCart {
   display: block;
